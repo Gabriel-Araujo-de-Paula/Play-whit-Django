@@ -1,15 +1,15 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 # Create your views here.
 
 def home(request):
-    return HttpResponse('a home do recipes')
+    return render(request, 'global/home.html')
 
 
 def about(request):
-    return HttpResponse('about')
+    return HttpResponse('About')
 
 
 def contact(requst):
