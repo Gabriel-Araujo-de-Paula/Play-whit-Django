@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,7 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+    <link rel="stylesheet" href="/recipes/css/style.css">
     <style>
         :root {
             --color-primary: #269fe6;
@@ -184,7 +186,7 @@ background-color: lightgreen;
         }
 
         .recipe-list-item {
-            max-width: 40rem;
+            max-width: 36rem;
 
         }
 
@@ -271,13 +273,7 @@ background-color: lightgreen;
             max-width: 500px;
         }
 
-        .my_grid {
-            display: inline-flex;
-            margin: auto;
-            max-width: 3fr;
-            min-width: 1fr;
 
-        }
           .main-footer {
             display: flex;
             align-items: center;
@@ -295,6 +291,15 @@ background-color: lightgreen;
 
         .main-footer a:hover {
             filter: brightness(.8);
+        }
+        .my_grid{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            display: inline-grid;
+            grid-template-columns: 3fr;
+            grid-template-rows: 3fr;
+            min-width: 360px;
         }
     </style>
     </style>
