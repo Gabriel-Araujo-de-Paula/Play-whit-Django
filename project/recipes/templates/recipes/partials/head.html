@@ -184,12 +184,14 @@ background-color: lightgreen;
         }
 
         .recipe-list-item {
-            max-width: 64rem;
+            max-width: 40rem;
+
         }
 
         .recipe-list-item:hover {
             transform: scale(1.02);
             box-shadow: -8px 8px 18px rgba(0, 0, 0, .25);
+
 
 
         }
@@ -271,11 +273,29 @@ background-color: lightgreen;
 
         .my_grid {
             display: inline-flex;
-            padding: 20px;
-            max-width: 2fr;
-            {#flex-wrap: wrap;#}
+            margin: auto;
+            max-width: 3fr;
+            min-width: 1fr;
 
         }
+          .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
 
+        .main-footer a {
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .main-footer a:hover {
+            filter: brightness(.8);
+        }
+    </style>
     </style>
 </head>
